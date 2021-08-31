@@ -4,6 +4,7 @@ go 1.17
 
 require (
 	github.com/PuerkitoBio/goquery v1.7.1
+	github.com/kljensen/snowball v0.6.0
 	github.com/microcosm-cc/bluemonday v1.0.15
 )
 

@@ -159,7 +159,10 @@ Temporary Items
 .apdisk
 
 logs.txt
-*.json
 .idea/
+data/enwiki-latest-abstract1.xml
+data/indexes_wiki.json
+results.json
+indexes.json
 
 # End of https://www.toptal.com/developers/gitignore/api/go,jetbrains,macos
