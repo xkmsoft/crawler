@@ -7,7 +7,7 @@ import (
 
 func main() {
 	seed := "https://vtk.org/"
-	depth := 2
+	depth := 3
 
 	c, err := collector.NewCollector(seed, depth, true, "vtk_org.json")
 	if err != nil {

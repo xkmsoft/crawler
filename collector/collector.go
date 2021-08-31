@@ -148,9 +148,9 @@ func (c *Collector) Crawl(page *SucceededPage, depth int) {
 		return
 	}
 	var wg sync.WaitGroup
+	wg.Add(len(page.Urls))
 	channel := make(chan ScrapeResult)
 	for _, u := range page.Urls {
-		wg.Add(1)
 		go c.Scrapper.Scrape(u, channel, &wg)
 	}
 	for range page.Urls {
